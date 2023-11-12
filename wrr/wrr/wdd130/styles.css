@@ -49,7 +49,7 @@ header{
 
 }
 nav a:hover{
-    background-color: #06fafa;
+    background-color: #0a06fa;
     color: aquamarine;
 
 }
@@ -99,7 +99,7 @@ footer p{
     font-size: 1.2em;
 }
 footer a:hover{
-    color:black;
+    color:red;
 }
 footer p a :hover{
     text-decoration: underline;
@@ -193,6 +193,13 @@ nav {
     grid-column: 6/10;
     grid-row: 6/7;
 }
+/*
+This the start of Page two Stories for the White Water rafting site
+*/
+.top,.bot{
+    display:flex
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
