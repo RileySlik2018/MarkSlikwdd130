@@ -5,8 +5,8 @@ header{
     
     background-color: #B19771;
     text-align: center;
-    
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #Big{
     width: 100%;
