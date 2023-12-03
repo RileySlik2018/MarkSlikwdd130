@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
      <!--
         Mark Riley Slik
@@ -11,6 +12,7 @@
     -->
 </head>
 <body>
+    <div id = "navbar">
     <header>
         <a id="logo_link" href="index.html">
    
@@ -18,26 +20,39 @@
     
          </a>
  <!--The header has the nav for the site plus the logo-->
-   
+ <div id="navbar-right">
          <nav>
             <a href="index.html">Home</a>
             <a href="fallwinter.html">Fall and Winter page</a>
             <a href="springsummer.html">Spring and Summer page</a>
             <a href="site-plan.html">site-plan</a>
         </nav>
+ </div>
     </header>
+</div>
     <main>
+        <div id ="summer">
         <!--This sections talks about the summer and the services being provide, image is of a lawnmower-->
-        <h1>Summer</h1>
-        <p>Summer fun is here so don't let summer chores bog you down on your way to the beach. We don't mind sweating so you don't have too. Enjoy your time at the pool as we take of your lawn and maintain you sprinklers.</p>
-        <img src="lawnmower.jpg" alt="lawnmower">
+            <div id ="summerleft">
+                <h1>Summer</h1>
+                <p>Summer fun is here so don't let summer chores bog you down on your way to the beach. We don't mind sweating so you don't have too. Enjoy your time at the pool as we take of your lawn and maintain you sprinklers.</p>
+            </div>
+            <div id="summerright">
+                <img id ="summerimg" src="lawnmower.jpg" alt="lawnmower">
+            </div>
+        </div>
     </main>
-    <section>
+    <section id="spring">
+        <div id="springleft">
         <!--This sections talks about the spring services and has a picture of sprinkler -->
-        <img src="sprinkler.jpg" alt="sprinkler spraying water">
+        <img id="springimg" src="sprinkler.jpg" alt="sprinkler spraying water">
+        
+    </div>
+    <div id="springright">
         <h1>Spring</h1>
         <p>Winter is over so it is time to breakout the lawn mower again. Get a head start on your lawn care this Spring with the help SlikLawnScaping. We can install sprinkler and replace any that didn't last through the Winter. You can trust that any Sprinkler we fix or install will last. Let us help you spring forward this year with an amazing looking lawn.</p>
-    </section>
+   </div> 
+</section>
     
     <footer>
         <p>SlikLawnScaping&copy; 2023 - Mark Riley Slik</p>
@@ -60,3 +75,16 @@
     </footer>
 </body>
 </html>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>

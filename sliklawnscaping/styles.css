@@ -46,10 +46,10 @@ footer{
     background-color: #B19771;
     padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-    position: fixed; /* Sticky/fixed navbar */
+    
     width: 100%;
-    top: 0; /* At the top */
-    z-index: 99;
+    
+    
   }
   
   /* Style the navbar links */
@@ -86,6 +86,28 @@ footer{
   /* Display some links to the right */
   #navbar-right {
     float: right;
+  }
+  #summer{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   
+  }
+  
+  #summerimg{
+    width: 100%;
+    align-self: center;
+  }
+  #spring{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  }
+  #springimg{
+    width: 100%;
+    align-self: center;
   }
   
   /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
