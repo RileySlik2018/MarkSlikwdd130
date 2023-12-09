@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Fall and Winter page</title>
      <!--
         Mark Riley Slik
@@ -12,34 +13,49 @@
 </head>
 <body>
     <header>
+        <div id="navbar">
         <a id="logo_link" href="index.html">
    
             <img src="lawnscaping.png" alt="logo" class="logo">
     
          </a>
  <!--The header has the nav for the site plus the logo-->
-   
+ <div id="navbar-right"> 
          <nav>
             <a href="index.html">Home</a>
             <a href="fallwinter.html">Fall and Winter page</a>
             <a href="springsummer.html">Spring and Summer page</a>
             <a href="site-plan.html">site-plan</a>
         </nav>
-    </header>
+     </div>   
+   </div> 
+</header>
     <main>
+        <div id = "winter">
+            <div>
         <!--The main section has picture of snower blower and more in depth paragraph taling about the winter services-->
-        <img src="snowblower.jpg" alt="A snowblower ">
+        <img id ="winterimg" src="snowblower.jpg" alt="A snowblower ">
+</div>
 
+
+ <div>  
         <H1>Winter</H1>
         <p>Don't let the Snow drag you down, instead let you blow you away with our amazing snow and ice removal services. Winter can be an extra tough time to take care of your land, but taking care of land has never been easier with the help of SlikLawnScaping. Let us handle all of you snow removal and ice removal needs.</p>
-        
+     </div>   
+    </div>
     </main>
     <section>
+        <div id = "fall">
         <!--This section talks about Fall and the services being provide, it has a picture of a leafblower-->
-        <H1>Fall</H1>
-        <p>The leaves are falling and  air is starting to get cold. Fall is wonderful time of year but it is also one the most important  times to take care of your lawn. There can be a long list of thing you need to do in order to prepare for winter . So let us help you by preparing your lawn for winter with our winterization services and leaf removal services</p>
-<img src="leafblower.jpg" alt="leafblower">
-    </section>
+            <div>
+                <H1>Fall</H1>
+                <p>The leaves are falling and  air is starting to get cold. Fall is wonderful time of year but it is also one the most important  times to take care of your lawn. There can be a long list of thing you need to do in order to prepare for winter . So let us help you by preparing your lawn for winter with our winterization services and leaf removal services</p>
+            </div>
+            <div>
+                <img id = "fallimg" src="leafblower.jpg" alt="leafblower">
+            </div>
+        </div> 
+</section>
     <footer>
         <p>SlikLawnScaping&copy; 2023 - Mark Riley Slik</p>
         <p><a href="index.html">Home</a></p>
@@ -61,5 +77,20 @@
         </div>
     </footer>
     
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+
+
 </body>
 </html>

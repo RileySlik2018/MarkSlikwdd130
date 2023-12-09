@@ -109,6 +109,26 @@ footer{
     width: 100%;
     align-self: center;
   }
+  #winter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #winterimg{
+    width: 100%;
+    align-self: center;
+  }
+  #fall{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #fallimg{
+    width: 100%;
+    align-self: center;
+  }
   
   /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
   @media screen and (max-width: 580px) {
