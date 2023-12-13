@@ -48,6 +48,12 @@ footer{
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     
     width: 100%;
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   
+   
     
     
   }
@@ -84,9 +90,7 @@ footer{
   }
   
   /* Display some links to the right */
-  #navbar-right {
-    float: right;
-  }
+ 
   #summer{
    display: flex;
    flex-direction: row;
@@ -128,6 +132,15 @@ footer{
   #fallimg{
     width: 100%;
     align-self: center;
+  }
+  footer{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   justify-content: space-around;
+   
+   
   }
   
   /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
